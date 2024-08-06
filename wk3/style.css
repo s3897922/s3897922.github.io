@@ -53,3 +53,7 @@ p {
   padding: 40px;
   background-color: wheat;
 }
+
+p:hover {
+  color: black;
+}
