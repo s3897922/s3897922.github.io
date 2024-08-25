@@ -1,0 +1,17 @@
+body {
+  background-color: pink;
+}
+
+.my-class {
+  color: whitesmoke;
+  text-align: center;
+}
+
+#name {
+  text-align: center;
+}
+
+img {
+  width: 650px;
+  height: 300px;
+}
