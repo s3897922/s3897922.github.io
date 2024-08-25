@@ -1,8 +1,8 @@
 body {
-  background-color: pink;
+  background-color: rgb(254, 189, 218);
   text-align: center;
   margin: auto;
-  max-width: 1300px;
+  max-width: 1000px;
 }
 
 img {
@@ -12,27 +12,39 @@ img {
 }
 
 #my-id1 {
-  color: blueviolet;
+  color: whitesmoke;
+  font-family: "Titan One", sans-serif;
 }
 
 #my-id2 {
-  color: blueviolet;
+  color: whitesmoke;
   line-height: 0%;
+  font-family: "Titan One", sans-serif;
 }
 
 #my-id3 {
-  color: lavender;
+  color: black;
   padding-top: 40px;
+  font-family: "Nerko One", cursive;
 }
 
 #my-id4 {
-  color: fuchsia;
+  color: whitesmoke;
+  font-family: "Titan One", sans-serif;
 }
 
 .my-class1 {
-  color: blue;
+  color: rgb(127, 148, 206);
+  font-family: "Titan One", sans-serif;
+  padding-top: 30px;
 }
 
 .my-class2 {
-  color: brown;
+  color: black;
+  font-family: "Nerko One", cursive;
+}
+
+.my-class1:hover {
+  color: whitesmoke;
+  font-size: xx-large;
 }
