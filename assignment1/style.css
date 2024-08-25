@@ -3,12 +3,15 @@ body {
   text-align: center;
   margin: auto;
   max-width: 1000px;
+  margin-bottom: 130px;
+  margin-top: 130px;
 }
 
 img {
   max-width: 800px;
+  max-height: 2000px;
   padding-top: 1px;
-  padding-bottom: 50px;
+  padding-bottom: 1px;
 }
 
 #my-id1 {
@@ -33,18 +36,44 @@ img {
   font-family: "Titan One", sans-serif;
 }
 
+#my-id5 {
+  margin-top: 100px;
+  font-family: "Titan One", sans-serif;
+  color: black;
+  text-decoration-line: underline;
+}
+
+#my-id6 {
+  font-family: "Titan One", sans-serif;
+  padding-top: 10px;
+}
+
 .my-class1 {
   color: rgb(127, 148, 206);
   font-family: "Titan One", sans-serif;
-  padding-top: 30px;
+  padding-top: 50px;
+  text-shadow: 3px 3px white;
 }
 
 .my-class2 {
   color: black;
   font-family: "Nerko One", cursive;
+  border: 4px dotted white;
+  border-radius: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .my-class1:hover {
-  color: whitesmoke;
+  color: rgb(234, 148, 220);
+  font-size: xx-large;
+}
+
+.my-class2:hover {
+  font-size: x-large;
+}
+
+#my-id4:hover {
+  color: rgb(127, 148, 206);
   font-size: xx-large;
 }
