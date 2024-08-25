@@ -1,17 +1,38 @@
 body {
   background-color: pink;
   text-align: center;
+  margin: auto;
+  max-width: 1300px;
 }
 
 img {
   max-width: 800px;
+  padding-top: 1px;
+  padding-bottom: 50px;
 }
 
-.my-class {
-  color: whitesmoke;
-  text-align: center;
+#my-id1 {
+  color: blueviolet;
 }
 
-#my-id {
+#my-id2 {
+  color: blueviolet;
+  line-height: 0%;
+}
+
+#my-id3 {
   color: lavender;
+  padding-top: 40px;
+}
+
+#my-id4 {
+  color: fuchsia;
+}
+
+.my-class1 {
+  color: blue;
+}
+
+.my-class2 {
+  color: brown;
 }
