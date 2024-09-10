@@ -7,3 +7,8 @@ function checkGrade() {
   let total = parseFloat(a1.value) + parseFloat(a2.value);
   console.log("sum is", total);
 }
+
+function calculateTotal(a, b) {
+  let total = a + b;
+  return total;
+}
