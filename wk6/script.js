@@ -28,3 +28,22 @@ function sendReport(score) {
     report.textConcent = "you got a D";
   }
 }
+
+const para = document.querySelector("p");
+console.log(para);
+
+const allPara = document.querySelectorAll("p");
+console.log(allPara);
+
+const h1 = document.querySelector("h1");
+console.log(h1);
+console.log(h1.textContent);
+h1.classList.add("red-style");
+
+const myCat = document.querySelector("#my-cat");
+console.log(myCat);
+myCat.classList.add("round");
+
+function toggleMe() {
+  myCat.classList.toggle("round");
+}
