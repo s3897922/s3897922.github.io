@@ -14,3 +14,13 @@ pauseButton.addEventListener("click", pauseAudio);
 function pauseAudio() {
   notify.pause();
 }
+
+const popSound = document.querySelector("#pop-sound");
+console.log(popSound);
+
+const popButton = document.querySelector("#pop-button");
+console.log(popButton);
+popButton.addEventListener("click", popAudio);
+function popAudio() {
+  popSound.play();
+}
