@@ -48,10 +48,21 @@ console.log(removeButton);
 removeButton.addEventListener("click", removeMe);
 
 function removeMe() {
+  console.log("remove button is clicked");
   let lastBox = boxContainer.lastElementChild;
   console.log(lastBox);
   if (lastBox) {
     lastBox.remove();
   }
   count--;
+}
+
+boxContainer.addEventListener("mouseenter", dropMe);
+boxContainer.addEventListener("mouseleave", pickMe);
+function dropMe() {
+  boxContainer.classList.add("drop");
+}
+
+function pickMe() {
+  boxContainer.classList.remove("drop");
 }
