@@ -1,9 +1,11 @@
 :root {
-  --primary-bg-color: #f4f4f4;
-  --text-color: #333;
-  --main-bg-color: #333;
-  --main-text-color: #fff;
-  --main-btn-bg-color: #938989;
+  --primary-bg-color: #172f67;
+  --text-color: #ede2d2;
+  --main-bg-color: #162b5b;
+  --main-text-color: #48536b;
+  --main-btn-bg-color: #48536b;
+  /* i have chosen my main colour palette as blue/grey/white to match the images i've put within the website design */
+  /* by using these more muted blue and grey shades to create a calming effect as the colours aren't harsh on the eyes, i am using darker colours to create a sense of winding down/relaxing */
 }
 
 body,
