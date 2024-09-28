@@ -1,7 +1,7 @@
 :root {
   --primary-bg-color: #172f67;
   --text-color: #ede2d2;
-  --main-bg-color: #162b5b;
+  --main-bg-color: #121f3f;
   --main-text-color: #48536b;
   --main-btn-bg-color: #48536b;
   /* i have chosen my main colour palette as blue/grey/white to match the images i've put within the website design */
@@ -43,6 +43,22 @@ header {
   padding: 10px 0;
   text-align: center;
   width: 100%;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+}
+
+p {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Navigation styling */
@@ -64,6 +80,9 @@ nav ul li {
 nav a {
   text-decoration: none;
   color: var(--text-color);
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* Media player styling */
@@ -119,4 +138,7 @@ footer {
   text-align: center;
   padding: 10px 0;
   width: 100%;
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
