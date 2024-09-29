@@ -68,20 +68,26 @@
         <h2>Additional Content</h2>
         <p>This is where you can showcase any other relevant content.</p>
         <!-- Add more content as needed -->
-        <section class="custom-video-player">
-          <video src="lifomusicvideo.mp4" controls id="my-video"></video>
+        <section class="video-player">
+          <video id="custom-video-player" controls>
+            <source
+            video
+            src="lifomusicvideo.mp4"
+            type="video/mp4"
+            />
+          </video>
           <div class="video-controls">
-            <button id="play-pause" onclick="togglePlayPause()">
+            <button id="play-button" onclick="togglePlayPause()">
               <img 
-              id="play"
+              id="play-img"
               src="https://img.icons8.com/ios-glyphs/30/play--v1.png" 
               alt="Play"
               width="24"
               height="24"
               />
             </button>
-            <div class="progress-bar">
-              <span id="progress-bar-fill"></span>
+            <div class="progress">
+              <span id="progress-fill"></span>
             </div>
           </div>
           </div>
