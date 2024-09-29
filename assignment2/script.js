@@ -1,21 +1,47 @@
 const audio = document.querySelector("#custom-audio-player");
-const playPauseBtn = document.querySelector("#play-pause-btn");
-const playPauseImg = document.querySelector("#play-pause-img");
-const progressBar = document.querySelector("#progress-bar-fill");
+const audioPlayPauseBtn = document.querySelector("#audio-play-pause-btn");
+const audioPlayPauseImg = document.querySelector("#audio-play-pause-img");
+const audioProgressBar = document.querySelector("#audio-progress-bar-fill");
 audio.removeAttribute("controls");
-// playPauseBtn.addEventListener("click", togglePlayPause);
-audio.addEventListener("timeupdate", updateProgressBar);
-function togglePlayPause() {
+
+audioPlayPauseBtn.addEventListener("click", toggleAudioPlayPause);
+
+audio.addEventListener("timeupdate", updateAudioProgressBar);
+function toggleAudioPlayPause() {
   if (audio.paused || audio.ended) {
     audio.play();
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+    audioPlayPauseImg.src =
+      "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
   } else {
     audio.pause();
-    playPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
+    audioPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
   }
 }
-function updateProgressBar() {
+function updateAudioProgressBar() {
   const value = (audio.currentTime / audio.duration) * 100;
-  progressBar.style.width = value + "%";
+  audioProgressBar.style.width = value + "%";
 }
 // Add other functionalities here
+const video = document.querySelector("#custom-video-player");
+const videoPlayPauseBtn = document.querySelector("#video-play-pause-btn");
+const videoPlayPauseImg = document.querySelector("#video-play-pause-img");
+const videoProgressBar = document.querySelector("#video-progress-bar-fill");
+video.removeAttribute("controls");
+
+videoPlayPauseBtn.addEventListener("click", toggleVideoPlayPause);
+
+video.addEventListener("timeupdate", updateVideoProgressBar);
+function toggleVideoPlayPause() {
+  if (video.paused || video.ended) {
+    video.play();
+    videoPlayPauseImg.src =
+      "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
+  } else {
+    video.pause();
+    videoPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/play--v1.png";
+  }
+}
+function updateVideoProgressBar() {
+  const value = (video.currentTime / video.duration) * 100;
+  videoProgressBar.style.width = value + "%";
+}

@@ -140,7 +140,7 @@ nav a {
   width: 100%;
 }
 
-.progress-bar {
+.audio-progress-bar {
   width: 100%;
   height: 10px;
   background-color: #ddd;
@@ -148,7 +148,7 @@ nav a {
   overflow: hidden;
 }
 
-.progress-bar span {
+.audio-progress-bar span {
   display: block;
   height: 100%;
   background-color: var(--main-bg-color);
@@ -156,12 +156,20 @@ nav a {
   transition: width 0.3s ease;
 }
 
-.progress {
+.video-progress-bar {
   width: 100%;
   height: 10px;
   background-color: #ddd;
   margin-top: 10px;
   overflow: hidden;
+}
+
+.video-progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  width: 0;
+  transition: width 0.3s ease;
 }
 
 /* Footer styling */
