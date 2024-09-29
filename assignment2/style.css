@@ -49,6 +49,13 @@ header {
   font-size: xx-large;
 }
 
+#student-number {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
+}
+
 p {
   font-family: "VT323", monospace;
   font-weight: 400;
@@ -86,6 +93,7 @@ nav a {
 }
 
 /* Media player styling */
+
 .media-player {
   width: 100%;
   margin: 0 auto;
@@ -96,16 +104,15 @@ nav a {
 }
 
 .video-player > video {
-  /* flex: 1; */
+  flex: 1;
   width: 100%;
 }
 
 .custom-controls {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 1rem;
-  margin-top: 10px;
+  gap: 10px;
   width: 100%;
 }
 
@@ -118,6 +125,7 @@ nav a {
   font-size: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .video-controls button {
@@ -141,7 +149,7 @@ nav a {
 }
 
 .audio-progress-bar {
-  width: 100%;
+  flex-grow: 1;
   height: 10px;
   background-color: #ddd;
   margin-top: 10px;
@@ -157,7 +165,7 @@ nav a {
 }
 
 .video-progress-bar {
-  width: 100%;
+  flex-grow: 1;
   height: 10px;
   background-color: #ddd;
   margin-top: 10px;

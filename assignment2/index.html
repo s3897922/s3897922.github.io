@@ -17,9 +17,9 @@
   <body>
     <!-- Header Section -->
     <header>
-      <h1>Study Zone</h1>
+      <h1>Lo-fi Study Zone</h1>
+      <p id="student-number">Mintera van der Wiel (S3897922)</p>
     </header>
-
     <!-- Navigation Section -->
     <nav>
       <ul>
@@ -56,6 +56,18 @@
               height="24"
             />
           </button>
+
+          <div class="custom-controls">
+            <button id="audio-replay-btn" onclick="toggleAudioReplay()">
+              <img
+              id="audio-replay-img"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVR4nO2WvU4CURCFv160slDAQjHCu+jGWn0CBCt5AF7BToi9xr9YCJ2V74Aan8EE0Ya/rLnJMbkhAe7e3awWnGQKyMz99sLMmYWF/qE2gBOgBbwD34oXoA1UgHxcSH0CeAEMgHBODIEmkPUFh4LvAx/6bMCXwAFQAJYURX13BfSV2wMCX3BoxQOw6VC3BdyqZgxU44CfPB78FBgJHsS5cd0Tbmo/gXVfsC/8TrUNUlZBDTcEcmnDr3Xr47TBRwI/pg0uCvw6K+lZkaSWLVOZqp6SMgmCV6yxmqo3Je0kCC7pzM6spLaSjPem2lwVJRnDT3qcyrOS8hr2vgw/rrajGEhTT2i2TFzd66xzl+Ss1d3G6H1V0xldYM21KNBKG3nCa9Za3I1aXFVhqC1jDN/lP/39ecdqVi/tafBDNYnp0EPNZkZR0sjcWO9lXZ+bTmoVOFNnurzsNaIsfhflNIstudCXoiNzKP/Fzl2IefoBRzqJY3eiplsAAAAASUVORK5CYII="
+              alt="Replay Button"
+              width="24"
+              height="24"
+              />
+            </button>
+  
           <!-- add the missing buttons or functionality here -->
           <div class="audio-progress-bar">
             <span id="audio-progress-bar-fill"></span>
@@ -65,7 +77,7 @@
 
       <!-- Additional Content Section -->
       <section>
-        <h2>Additional Content</h2>
+        <h2>Lo-fi Coffee House - Audio Player</h2>
         <p>This is where you can showcase any other relevant content.</p>
         <!-- Add more content as needed -->
         <section class="video-player">
@@ -86,12 +98,26 @@
               height="24"
               />
             </button>
+
+            <div class="custom-controls">
+              <button id="video-replay-btn" onclick="toggleVideoReplay()">
+                <img
+                id="video-replay-img"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABcElEQVR4nO2WvU4CURCFv160slDAQjHCu+jGWn0CBCt5AF7BToi9xr9YCJ2V74Aan8EE0Ya/rLnJMbkhAe7e3awWnGQKyMz99sLMmYWF/qE2gBOgBbwD34oXoA1UgHxcSH0CeAEMgHBODIEmkPUFh4LvAx/6bMCXwAFQAJYURX13BfSV2wMCX3BoxQOw6VC3BdyqZgxU44CfPB78FBgJHsS5cd0Tbmo/gXVfsC/8TrUNUlZBDTcEcmnDr3Xr47TBRwI/pg0uCvw6K+lZkaSWLVOZqp6SMgmCV6yxmqo3Je0kCC7pzM6spLaSjPem2lwVJRnDT3qcyrOS8hr2vgw/rrajGEhTT2i2TFzd66xzl+Ss1d3G6H1V0xldYM21KNBKG3nCa9Za3I1aXFVhqC1jDN/lP/39ecdqVi/tafBDNYnp0EPNZkZR0sjcWO9lXZ+bTmoVOFNnurzsNaIsfhflNIstudCXoiNzKP/Fzl2IefoBRzqJY3eiplsAAAAASUVORK5CYII="
+                alt="Replay Button"
+                width="24"
+                height="24"
+                />
+              </button>
+
             <div class="video-progress-bar">
               <span id="video-progress-bar-fill"></span>
             </div>
           </div>
           </div>
         </section>
+        <h2>Lo-fi Rainy Day - Video Player</h2>
+        <p>This is where you can showcase any other relevant content.</p>
     </main>
 
     <!-- Footer Section -->
