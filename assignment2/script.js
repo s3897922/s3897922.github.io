@@ -25,10 +25,9 @@ function updateAudioProgressBar() {
 function replayAudio() {
   audio.currentTime = 0;
   audio.play();
-  audioPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png"; // Update play/pause button to show pause icon
+  audioPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
 }
 
-// Add other functionalities here
 const video = document.querySelector("#custom-video-player");
 const videoPlayPauseBtn = document.querySelector("#video-play-pause-btn");
 const videoPlayPauseImg = document.querySelector("#video-play-pause-img");
@@ -56,5 +55,5 @@ function updateVideoProgressBar() {
 function replayVideo() {
   video.currentTime = 0;
   video.play();
-  videoPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png"; // Update play/pause button to show pause icon
+  videoPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
 }

@@ -4,8 +4,6 @@
   --main-bg-color: #121f3f;
   --main-text-color: #48536b;
   --main-btn-bg-color: #48536b;
-  /* i have chosen my main colour palette as blue/grey/white to match the images i've put within the website design */
-  /* by using these more muted blue and grey shades to create a calming effect as the colours aren't harsh on the eyes, i am using darker colours to create a sense of winding down/relaxing */
 }
 
 body,
@@ -27,9 +25,6 @@ body {
   justify-content: space-between;
 }
 
-/* Add additional styles as needed */
-
-/* Create a container for the main content */
 .container {
   max-width: 1000px;
   width: 100%;
@@ -95,7 +90,6 @@ nav a {
 }
 
 /* Media player styling */
-
 .media-player {
   width: 100%;
   margin: 10px 0 0;
