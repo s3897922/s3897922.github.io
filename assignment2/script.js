@@ -1,3 +1,4 @@
+// audio media player
 const audio = document.querySelector("#custom-audio-player");
 const audioPlayPauseBtn = document.querySelector("#audio-play-pause-btn");
 const audioPlayPauseImg = document.querySelector("#audio-play-pause-img");
@@ -22,12 +23,14 @@ function updateAudioProgressBar() {
   const value = (audio.currentTime / audio.duration) * 100;
   audioProgressBar.style.width = value + "%";
 }
+// audio replay function code
 function replayAudio() {
   audio.currentTime = 0;
   audio.play();
   audioPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
 }
 
+// video media player
 const video = document.querySelector("#custom-video-player");
 const videoPlayPauseBtn = document.querySelector("#video-play-pause-btn");
 const videoPlayPauseImg = document.querySelector("#video-play-pause-img");
@@ -52,8 +55,10 @@ function updateVideoProgressBar() {
   const value = (video.currentTime / video.duration) * 100;
   videoProgressBar.style.width = value + "%";
 }
+// audio replay function code
 function replayVideo() {
   video.currentTime = 0;
   video.play();
   videoPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
 }
+// i have divided the audio and video player functions into seperate areas and ensured to differentiate between the two types of media to keep a clean script
