@@ -5,6 +5,8 @@
   --main-text-color: #48536b;
   --main-btn-bg-color: #48536b;
 }
+/* the colour palette of dark blue/light blue/grey is influenced by my chosen image and video in the media players, as well as the concept of relaxation/study because this genre of music would often be used at night */
+/* i have chosen these colours as they are more related to ‘night-time’, giving the web page a more relaxed look to it. by choosing similar colours to the visuals, gives it simplicity and a cleaner look which blends within the page */
 
 body,
 h1,
@@ -15,7 +17,6 @@ ul {
 }
 
 body {
-  font-family: "Arial", sans-serif;
   background-color: var(--primary-bg-color);
   color: var(--text-color);
   line-height: 1.6;
@@ -23,6 +24,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+}
+
+a {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: medium;
 }
 
 .container {
@@ -88,6 +96,8 @@ nav a {
   font-weight: 700;
   font-style: normal;
 }
+
+/* i utilised the two chosen fonts by making the larger one a heading font, and the smaller one a subtext font. i found two fonts that are similar in style to ensure there is still a theme and unity within the page */
 
 /* Media player styling */
 .media-player {

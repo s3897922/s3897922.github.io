@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!-- i’ve chosen to use these two font families because it matches the theme of lo-fi relaxing study music, as this genre is often accompanied by album covers with calming digital drawings -->
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
@@ -41,6 +42,8 @@
             type="audio/mp3"
           />
         </audio>
+        <!-- i have accompanied the given music for relaxation/study with a lo-fi cafe gif to give a visualisation along with the audio -->
+        <!-- image sourced from artstation.com: https://www.artstation.com/artwork/rAlwZE -->
         <div class="custom-controls">
           <button id="audio-play-pause-btn" onclick="togglePlayPause()">
             <img
@@ -62,6 +65,7 @@
               height="24"
               />
             </button>
+            <!-- to add a second form of interactivity i’ve chosen to input a replay button to both media players. the reason for this is because when students are using music for study/relaxing they usually want the audio to go on for a longer time period so they can focus on their tasks, therefore a replay button would be the most practical interaction -->
   
           <div class="audio-progress-bar">
             <span id="audio-progress-bar-fill"></span>
@@ -72,6 +76,9 @@
       <!-- Additional Content Section -->
       <section>
         <h2>Lo-fi Coffee House - Audio Player</h2>
+          </button>
+        <a href="https://www.artstation.com/artwork/rAlwZE">Image Source</a>
+        <a href="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/erokia_ambient-wave-56-msfxp7-78.mp3">Audio Source</a>
         <section class="video-player">
           <video id="custom-video-player" controls>
             <source
@@ -90,7 +97,9 @@
               height="24"
               />
             </button>
-
+            <!-- as additional content i’ve decided to add a second media player in the form of a video to create more variation within the webpage. i did this to create a larger space so there is more interactivity and longer usage of the web page rather than if it was just one audio player -->
+            <!-- video sourced from youtube: https://youtu.be/x1Dvst34-LQ?si=krCuUezGzQ4bOXtz -->
+            <!-- i have given the video media player the exact same buttons/interactivity for the same reason as the audio media player (longer listening periods) -->
             <div class="custom-controls">
               <button id="video-replay-btn" onclick="toggleVideoReplay()">
                 <img
@@ -109,6 +118,7 @@
           </div>
         </section>
         <h2>Lo-fi Rainy Day - Video Player</h2>
+        <a href="https://youtu.be/x1Dvst34-LQ?si=krCuUezGzQ4bOXtz">Video Source</a>
     </main>
 
     <!-- Footer Section -->
@@ -117,6 +127,8 @@
       <a href="https://icons8.com/icon/59862/play">Play</a> icon by
       <a href="https://icons8.com">Icons8</a>
       <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
+      <a href="https://icons8.com">Icons8</a>
+      <a href="https://icons8.com/icon/91644/replay">Replay</a> icon by
       <a href="https://icons8.com">Icons8</a>
     </footer>
   </body>
