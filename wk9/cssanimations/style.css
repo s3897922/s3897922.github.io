@@ -71,3 +71,63 @@ button:hover {
 .duck-icon:hover {
   scale: 0.9;
 }
+
+#box {
+  min-width: 120px;
+  min-height: 120px;
+  /* background-color: cornflowerblue; */
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 4px dashed purple;
+  /* animation-name: color-wheel; */
+  animation-name: border-wheel;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+}
+
+@keyframes color-wheel {
+  0% {
+    background-color: darkgreen;
+  }
+  20% {
+    background-color: darkred;
+  }
+  40% {
+    background-color: fuchsia;
+  }
+  60% {
+    background-color: lightcoral;
+  }
+  80% {
+    background-color: dodgerblue;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
+@keyframes border-wheel {
+  0% {
+    border-color: darkgreen;
+  }
+  20% {
+    border-color: darkred;
+  }
+  40% {
+    border-color: fuchsia;
+  }
+  60% {
+    border-color: lightcoral;
+  }
+  80% {
+    border-color: dodgerblue;
+  }
+  100% {
+    border-color: orange;
+  }
+}
