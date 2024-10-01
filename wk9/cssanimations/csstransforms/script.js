@@ -15,7 +15,8 @@ function moveBall() {
   if (distance < outerWidth) {
     distance += 30;
     console.log(distance);
-    ball.style.transform = `translateX(${distance}px)`;
+    transformBall();
+    // ball.style.transform = `translateX(${distance}px)`;
   }
   // distance += 30;
   // ball.style.transform = `translateX(${distance}px)`;
@@ -31,5 +32,34 @@ rotateButton.addEventListener("click", rotateBall);
 let angle = 0;
 function rotateBall() {
   angle += 45;
-  ball.style.transform = `rotate(${angle}deg)`;
+  transformBall();
+  //   ball.style.transform = `rotate(${angle}deg)`;
+}
+
+const scaleButton = document.querySelector("#scale-button");
+console.log(scaleButton);
+scaleButton.addEventListener("click", scaleBall);
+
+let point = 1;
+function scaleBall() {
+  if (point > 0.22) {
+    point -= 0.1;
+    console.log(point);
+    transformBall();
+    // ball.style.transform = `scale(${point})`;
+  }
+}
+
+function transformBall() {
+  ball.style.transform = `translateX(${distance}px) rotate(${angle}deg) scale(${point})`;
+}
+
+const resetButton = document.querySelector("#reset-button");
+console.log(resetButton);
+resetButton.addEventListener("click", resetBall);
+function resetBall() {
+  distance = 0;
+  angle = 0;
+  point = 1;
+  transformBall();
 }
