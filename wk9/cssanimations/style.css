@@ -32,3 +32,33 @@ body {
   /* background-color: cornsilk; */
   transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
 }
+
+/* hover effect/transition */
+button {
+  padding: 10px 20px;
+  font-size: 1.3rem;
+  border-radius: 12px;
+  /* border-width: 0; */
+  cursor: pointer;
+  /* background-color: lightpink; */
+  /* transition: background-color 0.5s linear scale 0.5s ease; */
+  background-color: transparent;
+  border-color: cornflowerblue;
+  color: azure;
+  transition: border-color 0.7s ease scale o0.7s ease;
+}
+
+button:hover {
+  /* background-color: rgb(255, 131, 149); */
+  scale: 0.9;
+  border-color: crimson;
+  rotate: 10deg;
+}
+
+.duck-skin {
+  cursor: pointer;
+}
+
+.duck-skin:hover {
+  fill: crimson;
+}
