@@ -33,41 +33,39 @@ body {
   transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
 }
 
-/* hover effect/transition */
 button {
-  padding: 10px 20px;
-  font-size: 1.3rem;
+  padding: 20px 10px;
   border-radius: 12px;
-  /* border-width: 0; */
   cursor: pointer;
-  /* background-color: lightpink; */
-  /* transition: background-color 0.5s linear scale 0.5s ease; */
+  color: #e5e5cb;
   background-color: transparent;
-  border-color: cornflowerblue;
-  color: azure;
-  transition: border-color 0.7s ease scale o0.7s ease;
+  border: 2px solid cornsilk;
 }
 
 button:hover {
-  /* background-color: rgb(255, 131, 149); */
-  scale: 0.9;
-  border-color: crimson;
-  rotate: 10deg;
+  /* background-color: coral; */
+  /* transition: background-color 0.5s ease;  */
+  border-color: coral;
+
+  transition: border-color 0.5s ease;
 }
 
-.duck-skin {
-  cursor: pointer;
-  transition: fill 0.4s ease-in-out;
+.ball {
+  min-width: 50px;
+  min-height: 50px;
+  /* border-radius: 50%; */
+  background-color: purple;
+  transition: transform 0.7s ease-out;
+  /* transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* transition: translate 0.8s ease-out rotate 0.8s ease scale 0.8s ease; */
 }
 
-.duck-skin:hover {
-  fill: crimson;
+.controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.duck-icon {
-  transition: scale 0.4s ease;
-}
-
-.duck-icon:hover {
-  scale: 0.9;
+.moveright {
+  translate: 50px 0px;
 }
