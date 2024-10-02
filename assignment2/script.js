@@ -61,4 +61,4 @@ function replayVideo() {
   video.play();
   videoPlayPauseImg.src = "https://img.icons8.com/ios-glyphs/30/pause--v1.png";
 }
-// i have divided the audio and video player functions into seperate areas and ensured to differentiate between the two types of media to keep a clean script
+// i have divided the audio and video player functions into seperate areas and ensured to differentiate between the two types of media to keep a readable script
