@@ -26,12 +26,32 @@ body {
   cursor: pointer;
 }
 
-.colorbox {
-  background-color: purple;
-  cursor: pointer;
+.journal-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
 }
 
-.dropbox {
-  border: 2px dashed #e5e5cb7a;
-  cursor: pointer;
+.journal-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.drop-area {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border: dashed 2px transparent;
+}
+
+.polaroid {
+  width: 60px;
+  height: 60px;
+}
+
+.sticker {
+  width: 60px;
+  height: 60px;
 }
