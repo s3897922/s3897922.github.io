@@ -57,10 +57,12 @@ body {
 
 .decorations {
   position: absolute;
-  top: 5%;
+  top: 4%;
   left: 20%;
   z-index: 3;
   flex-direction: column;
+  display: flex;
+  gap: 10px;
 }
 
 .draggable {
