@@ -1,30 +1,30 @@
-let draggedElement = null;
+// let draggedElement = null;
 
-const colorBox = document.querySelector(".colorbox");
-const dropBox = document.querySelector(".dropbox");
+// const colorBox = document.querySelector(".colorbox");
+// const dropBox = document.querySelector(".dropbox");
 
-colorBox.addEventListener("dragstart", startDrag);
+// colorBox.addEventListener("dragstart", startDrag);
 
-function startDrag() {
-  draggedElement = colorBox;
-}
+// function startDrag() {
+//   draggedElement = colorBox;
+// }
 
-dropBox.addEventListener("dragover", endDrag);
+// dropBox.addEventListener("dragover", endDrag);
 
-function endDrag(event) {
-  event.preventDefault();
-}
+// function endDrag(event) {
+//   event.preventDefault();
+// }
 
-dropBox.addEventListener("drop", handleDrop);
+// dropBox.addEventListener("drop", handleDrop);
 
-function handleDrop() {
-  if (draggedElement) {
-    const color = window
-      .getComputedStyle(draggedElement)
-      .getPropertyValue("background-color");
-    // const color = draggedElement.style.backgroundColor;
-    dropBox.style.backgroundColor = color;
-    dropBox.textContent = "Dropped!";
-    draggedElement = null;
-  }
-}
+// function handleDrop() {
+//   if (draggedElement) {
+//     const color = window
+//       .getComputedStyle(draggedElement)
+//       .getPropertyValue("background-color");
+//     // const color = draggedElement.style.backgroundColor;
+//     dropBox.style.backgroundColor = color;
+//     dropBox.textContent = "Dropped!";
+//     draggedElement = null;
+//   }
+// }
