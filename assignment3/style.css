@@ -86,7 +86,13 @@ input[type="text"] {
   position: relative;
   top: 0;
   left: 0;
-  width: ;
+  z-index: 3;
+}
+
+.decorations2 {
+  position: relative;
+  top: 0;
+  left: 0;
   z-index: 3;
 }
 
@@ -125,6 +131,34 @@ input[type="text"] {
   transform: rotate(-30deg);
 }
 
+#polaroid5 {
+  position: absolute;
+  top: 80%;
+  left: -1550%;
+  transform: rotate(30deg);
+}
+
+#polaroid6 {
+  position: absolute;
+  top: 40%;
+  left: -1400%;
+  transform: rotate(-20deg);
+}
+
+#polaroid7 {
+  position: absolute;
+  top: -10%;
+  left: -1540%;
+  transform: rotate(40deg);
+}
+
+#polaroid8 {
+  position: absolute;
+  top: 3%;
+  left: -1350%;
+  transform: rotate(20deg);
+}
+
 #sticker1 {
   position: relative;
   top: 20%;
@@ -155,7 +189,35 @@ input[type="text"] {
 
 #sticker5 {
   position: relative;
-  margin-top: 90%;
+  margin-top: 10%;
   right: -200%;
+  transform: rotate(20deg);
+}
+
+#sticker6 {
+  position: relative;
+  margin-top: 90%;
+  right: 1500%;
+  transform: rotate(20deg);
+}
+
+#sticker7 {
+  position: relative;
+  margin-top: 90%;
+  right: 1250%;
+  transform: rotate(60deg);
+}
+
+#sticker8 {
+  position: relative;
+  margin-top: 50%;
+  right: 1500%;
+  transform: rotate(-20deg);
+}
+
+#sticker9 {
+  position: relative;
+  margin-top: 90%;
+  right: 1300%;
   transform: rotate(20deg);
 }
