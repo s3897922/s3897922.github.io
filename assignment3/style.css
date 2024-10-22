@@ -7,6 +7,7 @@ body {
   align-items: center;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 .outer {
@@ -72,8 +73,8 @@ input[type="text"] {
 }
 
 .polaroid {
-  width: 100px;
-  height: 130px;
+  max-width: 150px;
+  max-height: 200px;
 }
 
 .sticker {
@@ -82,13 +83,11 @@ input[type="text"] {
 }
 
 .decorations {
-  position: absolute;
-  top: 4%;
-  left: 20%;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: ;
   z-index: 3;
-  flex-direction: column;
-  display: flex;
-  gap: 10px;
 }
 
 .draggable {
@@ -96,4 +95,53 @@ input[type="text"] {
   cursor: move;
   transition: 0.2s;
   pointer-events: all;
+}
+
+#polaroid1 {
+  position: absolute;
+  top: -20%;
+  left: -40%;
+  transform: rotate(-10deg);
+}
+
+#polaroid2 {
+  position: absolute;
+  top: 50%;
+  left: 170%;
+  transform: rotate(10deg);
+}
+
+#polaroid3 {
+  position: absolute;
+  top: -50%;
+  left: 280%;
+  transform: rotate(30deg);
+}
+
+#polaroid4 {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  transform: rotate(-30deg);
+}
+
+#sticker1 {
+  position: relative;
+  margin-top: 40%;
+  right: -170%;
+  transform: rotate(20deg);
+}
+
+#sticker2 {
+  position: relative;
+  margin-top: 80%;
+  right: 40%;
+  transform: rotate(-20deg);
+}
+
+#sticker3 {
+  position: relative;
+  margin-top: 10%;
+  right: -380%;
+  transform: rotate(-20deg);
 }
