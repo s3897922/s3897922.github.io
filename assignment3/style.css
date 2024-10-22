@@ -19,14 +19,40 @@ body {
   cursor: pointer;
 }
 
+.theme {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: -50px;
+  z-index: 4;
+}
+
+.theme-label {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  width: 300px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  z-index: 4;
+}
+
 .journal-container {
   position: relative;
   width: 1000px;
   height: 800px;
   margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   z-index: 1;
 }
 
