@@ -99,28 +99,28 @@ input[type="text"] {
 
 #polaroid1 {
   position: absolute;
-  top: -20%;
+  top: -10%;
   left: -40%;
   transform: rotate(-10deg);
 }
 
 #polaroid2 {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 170%;
   transform: rotate(10deg);
 }
 
 #polaroid3 {
   position: absolute;
-  top: -50%;
+  top: -10%;
   left: 280%;
   transform: rotate(30deg);
 }
 
 #polaroid4 {
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 10%;
   transform: rotate(-30deg);
 }
@@ -134,7 +134,7 @@ input[type="text"] {
 
 #sticker2 {
   position: relative;
-  margin-top: 80%;
+  margin-top: 30%;
   right: 40%;
   transform: rotate(-20deg);
 }
@@ -144,4 +144,18 @@ input[type="text"] {
   margin-top: 10%;
   right: -380%;
   transform: rotate(-20deg);
+}
+
+#sticker4 {
+  position: relative;
+  margin-top: -100%;
+  right: -10%;
+  transform: rotate(20deg);
+}
+
+#sticker5 {
+  position: relative;
+  margin-top: 120%;
+  right: -250%;
+  transform: rotate(20deg);
 }
