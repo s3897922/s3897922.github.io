@@ -1,30 +1,44 @@
 let draggedElement = null;
+let offsetX = 0;
+let offsetY = 0;
 
-// const colorBox = document.querySelector(".colorbox");
-// const dropBox = document.querySelector(".dropbox");
+const draggables = document.querySelectorAll(".polaroid, .sticker");
 
-// colorBox.addEventListener("dragstart", startDrag);
+draggables.forEach((item) => {
+  item.addEventListener("mousedown", (event) => startDrag(event, item));
+});
 
-// function startDrag() {
-// draggedElement = colorBox;
-// }
+document.addEventListener("mousemove", handleDrag);
+document.addEventListener("mouseup", endDrag);
 
-// dropBox.addEventListener("dragover", endDrag);
+function startDrag(event, item) {
+  event.preventDefault();
+  draggedElement = item;
+  const rect = draggedElement.getBoundingClientRect();
+  offsetX = event.clientX - rect.left;
+  offsetY = event.clientY - rect.top;
+  draggedElement.style.position = "fixed";
+  draggedElement.style.zIndex = draggedElement.classList.contains("sticker")
+    ? "3"
+    : "2";
+  draggedElement.style.cursor = "grabbing";
+  moveAt(event.clientX, event.clientY);
+}
 
-// function endDrag(event) {
-//   event.preventDefault();
-// }
+function moveAt(clientX, clientY) {
+  if (!draggedElement) return;
+  draggedElement.style.left = `${clientX - offsetX}px`;
+  draggedElement.style.top = `${clientY - offsetY}px`;
+}
 
-// dropBox.addEventListener("drop", handleDrop);
+function handleDrag(event) {
+  if (!draggedElement) return;
+  moveAt(event.clientX, event.clientY);
+}
 
-// function handleDrop() {
-//    if (draggedElement) {
-//      const color = window
-//        .getComputedStyle(draggedElement)
-//        .getPropertyValue("background-color");
-//      // const color = draggedElement.style.backgroundColor;
-//      dropBox.style.backgroundColor = color;
-//      dropBox.textContent = "Dropped!";
-//      draggedElement = null;
-//    }
-// }
+function endDrag() {
+  if (draggedElement) {
+    draggedElement.style.cursor = "grab";
+    draggedElement = null;
+  }
+}
