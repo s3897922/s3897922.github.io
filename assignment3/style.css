@@ -62,7 +62,7 @@ input[type="text"] {
 .journal-container {
   position: relative;
   width: 1000px;
-  height: 800px;
+  height: 700px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -71,8 +71,8 @@ input[type="text"] {
 }
 
 .journal-background {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   position: relative;
   z-index: 1;
@@ -88,26 +88,27 @@ input[type="text"] {
   pointer-events: none;
 }
 
+.sticker {
+  width: 90px;
+  height: 90px;
+  position: relative; /* Keep relative by default */
+  cursor: grab;
+  z-index: 3;
+  user-select: none;
+  pointer-events: all; /* Ensure stickers are interactable */
+}
+
 .polaroid {
   max-width: 150px;
   max-height: 200px;
-  position: fixed;
+  position: relative; /* Also start with relative for polaroids */
   cursor: grab;
   z-index: 2;
   user-select: none;
 }
 
-.sticker {
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  cursor: grab;
-  z-index: 3;
-  user-select: none;
-}
-
-.polaroid:active,
-.sticker:active {
+.sticker:active,
+.polaroid:active {
   cursor: grabbing;
 }
 
@@ -189,30 +190,30 @@ input[type="text"] {
 }
 
 #sticker1 {
-  position: relative;
-  top: 20%;
-  right: -170%;
+  position: absolute;
+  top: 0;
+  right: 10px;
   transform: rotate(20deg);
 }
 
 #sticker2 {
-  position: relative;
-  margin-top: 90%;
-  right: 40%;
+  position: absolute;
+  top: 300px;
+  right: 10px;
   transform: rotate(-20deg);
 }
 
 #sticker3 {
-  position: relative;
-  margin-top: 10%;
-  right: -380%;
+  position: absolute;
+  top: 30px;
+  right: 70px;
   transform: rotate(-20deg);
 }
 
 #sticker4 {
-  position: relative;
-  margin-top: -100%;
-  right: -10%;
+  position: absolute;
+  top: 100px;
+  right: 80px;
   transform: rotate(20deg);
 }
 
