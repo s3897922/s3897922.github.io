@@ -1,5 +1,6 @@
 body {
   background-color: rgb(247, 232, 251);
+  /* using a soft lavender background was chosen to create a soothing background among the scattered designs, helping keep users relaxed and engaged during the creative process. the pastel tone also keeps the extra background muted in comparison to the bright colours stickers */
   display: flex;
   text-align: center;
   margin: 0;
@@ -72,6 +73,7 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  /* the journal is centred on the  screen to maintain the focus and ensure consistency across browser pages */
 }
 
 .journal-background {
@@ -106,28 +108,33 @@ input[type="text"] {
   justify-content: space-around;
 }
 
+/* by using a minimal overall layout this avoids overwhelming users. the design gives space to explore without presenting any unnecessary elements unrelated to the interaction design */
+
 .sticker {
   width: 90px;
   height: 90px;
-  position: relative; /* Keep relative by default */
+  position: relative;
   cursor: grab;
   z-index: 3;
   user-select: none;
-  pointer-events: all; /* Ensure stickers are interactable */
+  pointer-events: all;
 }
 
 .polaroid {
   max-width: 150px;
   max-height: 200px;
-  position: relative; /* Also start with relative for polaroids */
+  position: relative;
   cursor: grab;
   z-index: 2;
   user-select: none;
 }
 
+/* using the z-index styling to ensure that elements are placed in the right order when  being dragged and dropped. this makes the  most recently dragged item to stay on top, whilst mimicking the behaviour of actual objects stacked on top of each other */
+
 .sticker:active,
 .polaroid:active {
   cursor: grabbing;
+  /* the cursor changes to a grab icon when hovering over draggable items, providing a visual feedback to useability */
 }
 
 .draggable {

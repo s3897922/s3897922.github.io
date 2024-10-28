@@ -38,3 +38,6 @@ function handleDrag(event) {
 function endDrag() {
   draggedElement = null;
 }
+
+// the drag-and-drop interaction provides a tactile feel to the journal, mimicking the real-world process of arranging polaroid photos and stickers. this encourages exploration and engagement
+// implementing this interaction script currently allows easy addition of new draggable elements from adding  them to the HTML with  appropriate classes
