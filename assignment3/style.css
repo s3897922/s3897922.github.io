@@ -55,7 +55,7 @@ input[type="text"] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   z-index: 2;
 }
 
@@ -79,13 +79,27 @@ input[type="text"] {
 }
 
 .drop-area {
-  overflow: hidden;
   position: relative;
+  overflow: visible;
   width: 100%;
   height: 100%;
   border: dashed 2px transparent;
   cursor: move;
   pointer-events: none;
+}
+
+.decorations {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.decorations2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  justify-content: space-around;
 }
 
 .sticker {
@@ -112,20 +126,6 @@ input[type="text"] {
   cursor: grabbing;
 }
 
-.decorations {
-  position: relative;
-  top: 0;
-  left: 0;
-  justify-content: space-around;
-}
-
-.decorations2 {
-  position: relative;
-  top: 0;
-  left: 0;
-  justify-content: space-around;
-}
-
 .draggable {
   position: absolute;
   cursor: move;
@@ -135,64 +135,71 @@ input[type="text"] {
 
 #polaroid1 {
   position: absolute;
-  top: -10%;
-  left: -40%;
+  top: -290px;
+  left: 410px;
   transform: rotate(-10deg);
 }
 
 #polaroid2 {
   position: absolute;
-  top: 30%;
-  left: 170%;
+  top: -180px;
+  left: 600px;
   transform: rotate(10deg);
 }
 
 #polaroid3 {
   position: absolute;
-  top: -20%;
-  left: 280%;
+  top: 180px;
+  left: 580px;
   transform: rotate(30deg);
 }
 
 #polaroid4 {
   position: absolute;
-  top: 80%;
-  left: 10%;
+  top: -20px;
+  left: 450px;
   transform: rotate(-30deg);
 }
 
 #polaroid5 {
   position: absolute;
-  top: 80%;
-  left: -1550%;
+  top: -330px;
+  left: -720px;
   transform: rotate(30deg);
 }
 
 #polaroid6 {
   position: absolute;
-  top: 40%;
-  left: -1400%;
+  top: 130px;
+  left: -600px;
   transform: rotate(-20deg);
 }
 
 #polaroid7 {
   position: absolute;
-  top: -10%;
-  left: -1540%;
+  top: -50px;
+  left: -710px;
   transform: rotate(40deg);
 }
 
 #polaroid8 {
   position: absolute;
-  top: 3%;
-  left: -1350%;
+  top: -240px;
+  left: -590px;
   transform: rotate(20deg);
 }
 
 #sticker1 {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: -80px;
+  left: 410px;
+  transform: rotate(20deg);
+}
+
+/* #sticker1 {
+  position: absolute;
+  top: -150px;
+  right: 30px;
   transform: rotate(20deg);
 }
 
@@ -218,36 +225,36 @@ input[type="text"] {
 }
 
 #sticker5 {
-  position: relative;
+  position: absolute;
   margin-top: 10%;
   right: -200%;
   transform: rotate(20deg);
 }
 
 #sticker6 {
-  position: relative;
+  position: absolute;
   margin-top: 90%;
   right: 1500%;
   transform: rotate(20deg);
 }
 
 #sticker7 {
-  position: relative;
+  position: absolute;
   margin-top: 90%;
   right: 1250%;
   transform: rotate(60deg);
 }
 
 #sticker8 {
-  position: relative;
+  position: absolute;
   margin-top: 50%;
   right: 1500%;
   transform: rotate(-20deg);
 }
 
 #sticker9 {
-  position: relative;
+  position: absolute;
   margin-top: 90%;
   right: 1300%;
   transform: rotate(20deg);
-}
+} */
